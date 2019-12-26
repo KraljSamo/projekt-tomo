@@ -20,4 +20,7 @@ urlpatterns = [
     url(r'^(?P<student_pk>\d+)/(?P<part_pk>\d+)$',
         views.user_problem_solution_through_time,
         name='user_problem_solution_through_time'),
+    url(r'^(?P<course_pk>\d+)/compare$',
+        views.compare_solutions,
+        name='compare_solutions'),
 ]
